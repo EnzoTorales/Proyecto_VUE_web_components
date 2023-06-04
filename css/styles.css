@@ -1,3 +1,12 @@
 * {
     background-color: bisque;
 }
+
+.imagen {
+    width: 15%;
+}
+
+.caja {
+    border: solid 1px black;
+    padding: 5px;
+}

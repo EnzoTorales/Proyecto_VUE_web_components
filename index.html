@@ -11,7 +11,12 @@
 
 <body>
     <main id="app">
-            <card-component :titulo="titulo" :parrafo="parrafo" :valor="valor"></card-component>
+            <card-component v-for="zapas of zapatillas"
+                            :portada="zapas.portada"
+                            :identificador="zapas.identificador"
+                            :titulo="zapas.titulo"
+                            :valor="zapas.valor">
+            </card-component>
 
     </main>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

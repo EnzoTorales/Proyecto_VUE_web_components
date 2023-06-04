@@ -9,8 +9,8 @@ const Card = {
 
     props: {
         titulo: String,
-        imagen: String,
-        parrafo: String,
+        identificador: Number,
+        portada: String,
         valor: Number
     },
 
@@ -18,10 +18,10 @@ const Card = {
 
     template: `
         <div align="center">
-            <div>
-                <img src="" alt="">
+            <div class="caja">
+            <img class="imagen" :src="portada" :alt="titulo">
+                <p>{{identificador}}</p>
                 <h3>{{titulo}}</h3>
-                <p>{{parrafo}}</p>
                 <p>$ {{valor}}</p>
                 <button>Comprar</button>
             </div>
@@ -42,9 +42,56 @@ const Card = {
 
     data() {
       return {
-        titulo: "Titulo de Data",
-        parrafo: "Info de GifCard de Data",
-        valor: 3000
+        zapatillas: [
+            {
+                identificador: 01,
+                portada: "./img/zapatillas/adidas-zapatillas-running-adizero-sl.jpg",
+                titulo: "Adizero SL",
+                valor: 16000
+            },
+            {
+                identificador: 02,
+                portada: "./img/zapatillas/adidas-zapatillas-running-anchas-runfalcon-3.0.jpg",
+                titulo: "RunFalcon 3.0",
+                valor: 24000
+            },
+            {
+                identificador: 03,
+                portada: "./img/zapatillas/adidas-zapatillas-running-duramo-10.jpg",
+                titulo: "Duramo 10",
+                valor: 25000
+            },
+            {
+                identificador: 04,
+                portada: "./img/zapatillas/adidas-zapatillas-running-duramo-protect.jpg",
+                titulo: "Duramo Protect",
+                valor: 28000
+            },
+            {
+                identificador: 05,
+                portada: "./img/zapatillas/adidas-zapatillas-running-galaxy-6.jpg",
+                titulo: "Galaxy 6",
+                valor: 26000
+            },
+            {
+                identificador: 06,
+                portada: "./img/zapatillas/adidas-zapatillas-running-response.jpg",
+                titulo: "Response",
+                valor: 24000
+            },
+            {
+                identificador: 07,
+                portada: "./img/zapatillas/adidas-zapatillas-running-runfalcon-3.0.jpg",
+                titulo: "Run Falcon 3.0",
+                valor: 18000
+            },
+            {
+                identificador: 08,
+                portada: "./img/zapatillas/adidas-zapatillas-running-supernova--.jpg",
+                titulo: "Supernova",
+                valor: 22000
+            }
+        ]
       }
     }
   }).mount('#app')
