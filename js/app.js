@@ -14,10 +14,10 @@ const Card = {
         valor: Number
     },
 
-// en template son los valores que se muestran o llevana html y trae entre corchetes los datos que estan intanciados en Data
+// en template son los valores que se muestran o llevana html y trae entre corchetes los datos que estan instanciados en Data
 
     template: `
-        <div align="center">
+        <div class="central" align="center">
             <div class="caja">
             <img class="imagen" :src="portada" :alt="titulo">
                 <p>{{identificador}}</p>

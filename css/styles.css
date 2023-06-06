@@ -3,10 +3,22 @@
 }
 
 .imagen {
-    width: 15%;
+    width: 150px;
 }
 
 .caja {
     border: solid 1px black;
-    padding: 5px;
+    padding: 5px;    
+    background-color:white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.central {    
+    width:200px;
+    margin: 5px;
 }
